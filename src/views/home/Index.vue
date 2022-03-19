@@ -20,6 +20,7 @@
         'features',
         'affiliates',
         'social-media',
+        'contact-us',
       ]),
     ],
 

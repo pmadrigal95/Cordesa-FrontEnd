@@ -23,9 +23,37 @@ const router = new Router({
           name: 'Home',
           component: () => import('@/views/home/Index.vue'),
         },
+        {
+          path: '/Contact',
+          name: 'Contact',
+          component: () => import('@/views/contact-us/Index.vue'),
+        },
+        {
+          path: '/About',
+          name: 'About',
+          component: () => import('@/views/about/Index.vue'),
+        },
+        {
+          path: '/portfolio',
+          name: 'Portfolio',
+          component: () => import('@/views/portfolio/Index.vue'),
+        },
+        {
+          path: '/404',
+          name: '404',
+          component: () => import('@/views/Error/NotFoundViewComponent'),
+        },
+        {
+          path: '/403',
+          name: 'network-issue',
+          component: () => import('@/views/Error/NetworkIssueViewComponent'),
+        },
+        {
+          path: '*',
+          redirect: { name: '404' },
+        },
       ],
     },
-
   ],
 })
 

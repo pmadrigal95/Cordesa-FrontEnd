@@ -1,47 +1,111 @@
 <template>
-  <v-footer
-    id="home-footer"
-    color="black"
-    dark
-    min-height="72"
-  >
-    <v-container>
-      <v-row>
+  <div id="footer">
+    <img
+      :src="require('@/assets/blob-bottom.png')"
+      class="hidden-sm-and-down"
+      width="100%"
+    >
+
+    <v-footer
+      class="grey--text transparent px-0 px-md-6 text-center text-md-left"
+      height="auto"
+    >
+      <v-row class="mx-0">
         <v-col
           cols="12"
-          md="6"
+          md="4"
         >
-          <div class="d-flex flex-wrap justify-md-start justify-center justify-md-none">
-            <template v-for="(s, i) in social">
-              <a
-                :key="s"
-                class="white--text pa-1 pa-md-0"
-                href="#"
-                v-text="s"
+          <div
+            class="
+                            headline
+                            font-weight-bold
+                            primary--text
+                            mb-6
+                            d-inline-flex
+                            align-center
+                        "
+          >
+            <v-avatar
+              class="mr-3"
+              size="50"
+              tile
+            >
+              <v-img
+                :src="
+                  $vuetify.theme.dark === true
+                    ? require('@/assets/zero-logo-dark.svg')
+                    : require('@/assets/zero-logo-light.svg')
+                "
+                contain
               />
+            </v-avatar>
+            CORDESA Ltd
+          </div>
 
-              <v-responsive
-                v-if="i < social.length - 1"
-                :key="`divider-${s}`"
-                class="mx-4 shrink hidden-sm-and-down"
-                max-height="24"
-              >
-                <v-divider vertical />
-              </v-responsive>
-            </template>
+          <div
+            class="
+                            subtitle-1
+                            font-weight-light
+                            mb-6
+                            hidden-sm-and-down
+                        "
+          >
+            Somos una empresa costarricense<br>
+            Importamos a Costa Rica maquinaria de construcción<br>
           </div>
         </v-col>
 
         <v-col
-          class="text-center text-md-right"
           cols="12"
-          md="6"
+          md="4"
         >
-          Copyright &copy; {{ new Date().getFullYear() }} Vuetify, LLC
+          <div class="headline font-weight-bold primary--text mb-6">
+            Nuestras Marcas
+          </div>
+          <a
+            class="title font-weight-light grey--text d-block mb-4"
+            href="https://mstcostarica.com/"
+          >
+            MST
+          </a>
+          <a
+            href="https://mstcostarica.com/"
+            class="title font-weight-light grey--text d-block"
+          >
+            ZOOMLION
+          </a>
+        </v-col>
+
+        <v-col
+          cols="12"
+          md="4"
+        >
+          <v-row
+            class="text-center"
+            :dense="$vuetify.breakpoint.smAndDown"
+          >
+            <v-col
+              v-for="(social, i) in socials"
+              :key="i"
+              class="mb-6 mb-md-12 text-center"
+              cols="3"
+            >
+              <v-btn
+                :small="$vuetify.breakpoint.smAndDown"
+                color="white"
+                fab
+              >
+                <v-icon
+                  color="primary"
+                  v-text="social.icon"
+                />
+              </v-btn>
+            </v-col>
+          </v-row>
         </v-col>
       </v-row>
-    </v-container>
-  </v-footer>
+    </v-footer>
+  </div>
 </template>
 
 <script>
@@ -49,17 +113,27 @@
     name: 'HomeFooter',
 
     data: () => ({
-      social: [
-        'Facebook',
-        'Twitter',
-        'Instagram',
-        'Linkedin',
+      socials: [
+        { icon: 'mdi-facebook', href: '#' },
+        { icon: 'mdi-instagram', href: '#' },
       ],
     }),
   }
 </script>
 
 <style lang="sass">
-  #home-footer a
-    text-decoration: none
+#footer
+    a
+        text-decoration: none
+
+    img
+        position: absolute
+        bottom: 0
+        right: 0
+        left: 0
+        height: 500px
+        opacity: .05
+
+    @media screen and (min-width: 960px)
+        margin-top: 200px
 </style>

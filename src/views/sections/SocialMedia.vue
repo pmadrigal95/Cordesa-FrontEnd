@@ -30,6 +30,7 @@
         light
         min-width="168"
         x-large
+        to="/Contact"
       >
         Contáctenos
 
