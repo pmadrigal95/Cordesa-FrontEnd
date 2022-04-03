@@ -5,7 +5,7 @@ import Router from 'vue-router'
 Vue.use(Router)
 
 const router = new Router({
-  mode: 'history',
+  mode: 'hash',
   base: process.env.BASE_URL,
   scrollBehavior: (to, from, savedPosition) => {
     if (to.hash) return { selector: to.hash }
@@ -37,6 +37,11 @@ const router = new Router({
           path: '/portfolio',
           name: 'Portfolio',
           component: () => import('@/views/portfolio/Index.vue'),
+        },
+        {
+          path: '/details/:Id?',
+          name: 'Detail',
+          component: () => import('@/views/detail/Index.vue'),
         },
         {
           path: '/404',

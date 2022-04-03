@@ -45,7 +45,7 @@
     data () {
       return {
         branches: [
-          { light: 'zero-logo-light.svg', dark: 'zero-logo-dark.svg' },
+          { light: 'zero-logo-light.png', dark: 'zero-logo-dark.png' },
           { light: 'BASAK.png', dark: 'BASAK.png' },
           { light: 'mst.png', dark: 'MST-white.png' },
           { light: 'zoomlion.png', dark: 'zoomlion.png' },

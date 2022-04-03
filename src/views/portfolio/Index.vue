@@ -12,7 +12,7 @@
 
     extends: View,
 
-    mixins: [LoadSections(['portafolio', 'contact-us'])],
+    mixins: [LoadSections(['portafolio', 'social-media', 'contact-us'])],
 
     props: {
       id: {

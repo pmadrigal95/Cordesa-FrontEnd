@@ -49,7 +49,7 @@
       justify="center"
     >
       <base-img
-        :src="require(`@/assets/zero-logo-${$vuetify.theme.isDark ? 'dark' : 'light'}.svg`)"
+        :src="require(`@/assets/zero-logo-${$vuetify.theme.isDark ? 'dark' : 'light'}.png`)"
         class="mr-3 hidden-xs-only"
         contain
         max-width="380"

@@ -23,7 +23,7 @@
     />
 
     <base-img
-      :src="require(`@/assets/${$vuetify.theme.isDark ? 'zero-logo-dark.svg' : 'zero-logo-light.svg'}`)"
+      :src="require(`@/assets/${$vuetify.theme.isDark ? 'zero-logo-dark.png' : 'zero-logo-light.png'}`)"
       class="mx-auto mb-12"
       contain
       height="350"

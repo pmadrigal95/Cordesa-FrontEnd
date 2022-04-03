@@ -27,9 +27,7 @@
             <base-btn
               :block="$vuetify.breakpoint.smAndDown"
               color="white"
-              :href="
-                `mailto:Info@Corp-Cordesa.Com?subject=Consulta`
-              "
+              :href="`mailto:Info@Corp-Cordesa.Com?subject=Consulta`"
               large
               outlined
               target="_blank"

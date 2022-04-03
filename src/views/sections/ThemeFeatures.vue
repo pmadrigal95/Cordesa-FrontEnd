@@ -64,6 +64,8 @@
                   light
                   min-width="168"
                   x-large
+                  target="_blank"
+                  href="https://mstcostarica.com/"
                 >
                   MST Costa Rica
 

@@ -15,7 +15,7 @@
     methods: {
       $goToGallery (id) {
         this.$router.push({
-          name: 'Gallery',
+          name: 'Detail',
           params: { Id: id },
         })
       },

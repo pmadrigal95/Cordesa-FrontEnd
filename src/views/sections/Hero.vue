@@ -32,7 +32,7 @@
             :class="$vuetify.breakpoint.smAndDown ? 'flex-column align-start' : 'align-center'"
             class="d-flex flex-wrap"
           >
-            <base-btn>
+            <base-btn to="/Portfolio">
               Nuestros Equipos
             </base-btn>
 
@@ -43,6 +43,7 @@
               class="pa-1"
               height="auto"
               text
+              to="/Contact"
             >
               Contáctenos
             </base-btn>

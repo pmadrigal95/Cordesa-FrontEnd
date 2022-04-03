@@ -11,7 +11,7 @@
         :src="
           require(`@/assets/zero-logo-${
             $vuetify.theme.isDark ? 'dark' : 'light'
-          }.svg`)
+          }.png`)
         "
         contain
         max-width="200"

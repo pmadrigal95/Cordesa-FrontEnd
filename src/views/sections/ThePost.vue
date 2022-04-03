@@ -26,7 +26,7 @@
       :src="
         setting.title ? setting.banner : require(`@/assets/${setting.banner}`)
       "
-      gradient="to bottom, rgba(0,0,0,.4), rgba(0,0,0,0)"
+      gradient="to bottom, rgba(23, 32, 42, .9), rgba(0,0,0,0)"
       height="50vh"
       loading="lazy"
     >

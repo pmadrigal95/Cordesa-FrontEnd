@@ -1,11 +1,5 @@
 <template>
   <div id="footer">
-    <img
-      :src="require('@/assets/blob-bottom.png')"
-      class="hidden-sm-and-down"
-      width="100%"
-    >
-
     <v-footer
       class="grey--text transparent px-0 px-md-6 text-center text-md-left"
       height="auto"
@@ -33,8 +27,8 @@
               <v-img
                 :src="
                   $vuetify.theme.dark === true
-                    ? require('@/assets/zero-logo-dark.svg')
-                    : require('@/assets/zero-logo-light.svg')
+                    ? require('@/assets/zero-logo-dark.png')
+                    : require('@/assets/zero-logo-light.png')
                 "
                 contain
               />

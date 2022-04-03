@@ -24,7 +24,7 @@
       setting () {
         return {
           banner: 'light.jpg',
-          img: 'zero-logo-light.svg',
+          img: 'zero-logo-light.png',
           url: '/',
         }
       },
